@@ -1,5 +1,6 @@
 package com.ilyatsg.notesapi.entities;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;

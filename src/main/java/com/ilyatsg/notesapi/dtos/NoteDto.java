@@ -1,16 +1,23 @@
 package com.ilyatsg.notesapi.dtos;
 
 import com.ilyatsg.notesapi.entities.Note;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
+@Schema(description = "Note Dto")
 public class NoteDto {
+
+    @Schema(type = "int", example = "1")
     private Integer id;
 
+    @Schema(type = "int", example = "1")
     private Integer user_id;
 
+    @Schema(type = "string", example = "Test title")
     private String title;
 
+    @Schema(type = "string", example = "Test content")
     private String content;
 
     public NoteDto(Integer id, Integer user_id, String title, String content) {
