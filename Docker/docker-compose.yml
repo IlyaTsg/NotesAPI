@@ -1,0 +1,14 @@
+services:
+  app:
+    image: beetlejuice21/notes_api:latest
+    ports:
+      - 80:8080
+    links:
+      - mysql
+  mysql:
+    image: beetlejuice21/notes_db:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: notes_db_admin
+      MYSQL_USER: notes_db_admin
+      MYSQL_PASSWORD: notes_db_admin
+      MYSQL_DATABASE: notes_db
