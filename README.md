@@ -1,2 +1,12 @@
 # NotesAPI
 API for Notes App
+
+**Запуск API**
+1. Установить Docker
+     - Linux(https://docs.docker.com/desktop/install/linux-install/)
+     - Windows(https://docs.docker.com/desktop/install/windows-install/)
+2. Скачать репозиторий `git clone git@github.com:IlyaTsg/NotesAPI.git` или скачать файл `Docker/docker-compose.yml`
+3. В папке проекта запустить контейнер `docker-compose up`
+4. По-умолчанию API работает на порту 80. Порт можно поменять в файле docker-compose.yml(`- 80:8080` -> `- нужный_порт:8080`)
+
+**Документация доступна по URL: http://localhost:80/NotesAPI/swagger-ui/index.html**
